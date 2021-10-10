@@ -35,9 +35,9 @@ Parametr `n` zawiera numer instancji Notecia. Parametr `calc` jest wskaźnikiem 
 * `n` – Wstaw na stos numer instancji tego Notecia.
 
 * `g` – Wywołaj (zaimplementowaną gdzieś indziej w języku C lub Asemblerze) funkcję:
-```
+    ```
     int64_t debug(uint32_t n, uint64_t *stack_pointer);
-```
+    ```
     Parametr `n` zawiera numer instancji Notecia wywołującego tę funkcję. Parametr `stack_pointer` wskazuje na wierzchołek stosu Notecia. Funkcja `debug` może zmodyfikować stos. Wartość zwrócona przez tę funkcję oznacza, o ile pozycji należy przesunąć wierzchołek stosu po jej wykonaniu.
 
 * `W` – Zdejmij wartość ze stosu, potraktuj ją jako numer instancji Notecia `m`. Czekaj na operację `W` Notecia `m` ze zdjętym ze stosu numerem instancji Notecia `n` i zamień wartości na wierzchołkach stosów Noteci `m` i `n`.
